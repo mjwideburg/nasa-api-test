@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 const PhotoOfTheDay: React.FC = ({}) => {
   const [photoData, setPhoto] = useState<any>()
 
-  // Retrieve photo of the day using the existing api getPhotoOfTheDay, it should retireve when the page loads
+  // Retrieve photo of the day using the existing api getPhotoOfTheDay, it should retrieve when the page loads
 
   return (
     <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 4 }}>
