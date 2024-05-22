@@ -5,11 +5,11 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/mjwideburg/engineer-test
+    git clone https://github.com/mjwideburg/nasa-api-test
     ```
 2. Navigate to the project directory:
     ```sh
-    cd engineer-test
+    cd nasa-api-test
     ```
 3. Create a `.env` file in the root of the project and copy the contents of the provided `.env` file
     ```sh
