@@ -16,7 +16,7 @@ const ClosestAsteroid: React.FC = () => {
     
           // Interview candidate: Implement the logic to find the closest asteroid
           // Iterate through the list of asteroids and find the one with the minimum distance from Earth
-          // Once found, update the state with the asteroid's name and its distance from Earth using the setAsteroid
+          // Once found, update the state with the asteroid's name and its distance(km or miles) from Earth using the setAsteroid
 
           // documentation: https://proulxp.github.io/CS290-How-To-Guide/neo.html
           // HINTS: close_approach_data and miss_distance
