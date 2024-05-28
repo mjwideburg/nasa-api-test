@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography } from '@mui/material';
+import { Card, CardContent, CardHeader, CardMedia, Container, Typography } from '@mui/material';
 
 const PhotoOfTheDay: React.FC = ({}) => {
   const [photoData, setPhoto] = useState<any>()
@@ -11,11 +11,21 @@ const PhotoOfTheDay: React.FC = ({}) => {
       <Typography variant="h2" component="h2">
         Photo Of The Day
       </Typography>
-      {/* utilize the card component with media https://mui.com/material-ui/react-card/#media 
-
-      - The card should show a title, the photo, and a description
-
-      */}
+      {photoData && (
+        <Card variant="outlined" sx={{ maxWidth: 600, width: '100%', mt: 4 }}>
+          <CardHeader title={photoData.title} />
+          <CardMedia
+            component="img"
+            image={photoData.url}
+            alt={photoData.title}
+          />
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              {photoData.explanation}
+            </Typography>
+          </CardContent>
+        </Card>
+      )}
     </Container>
   );
 };
