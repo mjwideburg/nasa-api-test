@@ -38,11 +38,6 @@ Retrieve and display NASA's Photo of the Day using the provided `getPhotoOfTheDa
 
 **Steps:**
 1. Use the `getPhotoOfTheDay` function to fetch the photo data when the page loads.
-2. Use the Material UI `Card` component to display the photo.
-3. The card should include:
-    - A title (`CardHeader`)
-    - The photo (`CardMedia`)
-    - A description (`CardContent`)
 
 **Hints:**
 - Refer to the Material UI Card component documentation: [Material UI Card](https://mui.com/material-ui/react-card/#media).
