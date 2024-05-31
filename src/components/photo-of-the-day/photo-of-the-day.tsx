@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardMedia, Container, Typography } from '@mui/material';
-import { getPhotoOfTheDay } from '../../api/nasa';
 
 const PhotoOfTheDay: React.FC = ({}) => {
   const [photoData, setPhoto] = useState<any>()
