@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardMedia, Container, Typography } from '@mui/material';
+import { getPhotoOfTheDay } from '../../api/nasa';
 
 const PhotoOfTheDay: React.FC = ({}) => {
   const [photoData, setPhoto] = useState<any>()
 
-  // Retrieve photo of the day using the existing api getPhotoOfTheDay, it should retrieve when the page loads
+  // Retrieve photo of the day using the existing api getPhotoOfTheDay, it should retrieve when the page loads.
+  // Ensure that it only runs once, and that we handle the asyncronous call.
 
   return (
     <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 4 }}>
